@@ -178,7 +178,7 @@ def job():
 if __name__ == "__main__":
     init_db()
 
-    schedule.every(1).minutes.do(job)
+    schedule.every(15).minutes.do(job)
 
     print("🚀 Cloudflare Iran traffic monitor started (every 15 minutes)")
     while True:
