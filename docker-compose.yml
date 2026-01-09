@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  radar-monitor:
+    build: .
+    container_name: iran-radar-monitor
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+    env_file:
+      - .env
+    environment:
+      - TZ=UTC
+      - DB_PATH=/app/data/iran_traffic.db
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
