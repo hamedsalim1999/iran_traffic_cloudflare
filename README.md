@@ -23,8 +23,8 @@ Monitor Iran's internet traffic using Cloudflare Radar API and send notification
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd radar
+   git clone https://github.com/hamedsalim1999/iran_traffic_cloudflare.git
+   cd iran_traffic_cloudflare
    ```
 
 2. **Create virtual environment**
